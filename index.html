@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    const postRequest = async () => {
+        await fetch("post api url", {
+            method: 'POST',
+            body: 'post data',
+            headers: {
+                // something header
+            },
+        })
+            .then((response) => {
+                // something task after response
+            })
+
+    }
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<button onclick="postRequest()">request fetch</button>
+<br><br>
+<label id="loginLabel">조회 전</label>
+</body>
+
+</html>
